@@ -260,7 +260,7 @@ $drupal_hash_salt = '';
  * for you.
  */
 //$base_url = 'http://' . $_SERVER['SERVER_NAME'] . '/content'; 
-$base_url = 'http://' . $_SERVER['SERVER_NAME'];
+$base_url = 'http://' beta.twinspires.com;
 /**
  * PHP settings:
  *
@@ -279,7 +279,7 @@ $base_url = 'http://' . $_SERVER['SERVER_NAME'];
  * collection occurs by using the most common settings.
  */
 ini_set('session.gc_probability', 1);
-ini_set('session.gc_divisor', 100);
+ini_set('session.gc_divisor', 50000);
 
 /**
  * Set session lifetime (in seconds), i.e. the time from the user's last visit
@@ -287,7 +287,7 @@ ini_set('session.gc_divisor', 100);
  * a session is deleted, authenticated users are logged out, and the contents
  * of the user's $_SESSION variable is discarded.
  */
-ini_set('session.gc_maxlifetime', 200000);
+ini_set('session.gc_maxlifetime', 200);
 
 /**
  * Set session cookie lifetime (in seconds), i.e. the time from the session is
@@ -315,7 +315,7 @@ ini_set('session.cookie_lifetime', 2000000);
  * shared base domain. Doing so assures that users remain logged in as they
  * cross between your various domains.
  */
-$cookie_domain = '.twinspires.com';
+$cookie_domain = 'beta.twinspires.com';
 
 /**
  * Variable overrides:

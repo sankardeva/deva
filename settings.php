@@ -280,7 +280,6 @@ $base_url = 'http://' beta.twinspires.com;
  */
 ini_set('session.gc_probability', 1);
 ini_set('session.gc_divisor', 50000);
-
 /**
  * Set session lifetime (in seconds), i.e. the time from the user's last visit
  * to the active session may be deleted by the session garbage collector. When
@@ -288,7 +287,6 @@ ini_set('session.gc_divisor', 50000);
  * of the user's $_SESSION variable is discarded.
  */
 ini_set('session.gc_maxlifetime', 200);
-
 /**
  * Set session cookie lifetime (in seconds), i.e. the time from the session is
  * created to the cookie expires, i.e. when the browser is expected to discard
@@ -316,7 +314,6 @@ ini_set('session.cookie_lifetime', 2000000);
  * cross between your various domains.
  */
 $cookie_domain = 'beta.twinspires.com';
-
 /**
  * Variable overrides:
  *
